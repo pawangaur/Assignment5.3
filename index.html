@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Head of the Root -->
+<head> <!-- child sub root of the html tag as head tag  -->
+	<meta charset="UTF-8">
+	<title>JavaScript Objects</title>
+</head>
+<body>
+<!-- it is a body tag-->
+	<script>
+		var StudentDetails ={
+			StudentName:"Mohan",
+			DOB:"29 Mar 1998",
+			Skills:"Programming",
+			Address:{
+				State:"Uttarakhand",
+				City:"Dehradun",
+				Country:"India",
+				Pincode:261259
+			}
+		}
+		console.log(StudentDetails);
+		StudentDetails.eyecolor="black";
+		StudentDetails.mothername="Mamta bisht";
+		delete StudentDetails.Address.Pincode;
+		console.log("student details now are:");
+		 for(var key in StudentDetails)
+    		{
+    		console.log(StudentDetails[key]);
+    		}
+	</script>
+</body>
+</html>
